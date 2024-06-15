@@ -1,14 +1,13 @@
-version: '3.7'
+version: "3.7"
 
 services:
-
   akaunting:
     container_name: akaunting
     image: docker.io/akaunting/akaunting:latest
     build:
       context: .
     ports:
-      - 8080:80
+      - 8091:80
     volumes:
       - akaunting-data:/var/www/html
     restart: unless-stopped
